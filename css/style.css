@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Muli:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lora:700);
+
+body {
+	background: url(../images/home-bg.jpg) no-repeat;
+	background-size: cover;
+	margin: 0;
+
+	font: 400 1em "Muli", sans-serif;
+}
+
+.wrapper {
+	width: 950px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	box-shadow: 0 0 12px 7px rgba(0, 0, 0, 0.7);
+}
+
+header,
+footer {
+	background-color: #152738;
+	color: #FFFFFF;
+	padding: 15px;
+}
+
+header {
+	box-shadow: 0 5px 11px 0px rgba(0, 0, 0, 0.67);
+}
+
+footer {
+	margin-top: 20px;
+}
+
+footer p {
+	margin: 5px 0;
+}
+
+article {
+	padding: 20px 15px;
+}
+
+h1,
+h2,
+h3,
+.logo {
+	font-family: "Lora", serif;
+}
+
+h1 {
+	font-size: 1.7em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+a {
+	color: #55A13B;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+.logo {
+	color: #FFFFFF;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.page-title {
+	margin-top: 0;
+}
+
+.home > h2:first-of-type {
+	margin-top: 0;
+}
+
+.about-img {
+	margin: 0 15px 14px 0;
+	float: left;
+}
+
+.week {
+	margin: 15px 0 15px 50px;
+}
