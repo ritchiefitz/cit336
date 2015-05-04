@@ -9,7 +9,7 @@
 			<li><a href="#">Exercise 1-1</a> I did it.</li>
 			<li><a href="#">Exercise 1-2</a> I did it.</li>
 			<li><a href="#">Exercise 1-3</a> I did it.</li>
-			<li><a href="#">Exercise 2-1</a></li>
+			<li><a href="/chapters/two/one">Exercise 2-1</a></li>
 			<li><a href="#">Exercise 3-1</a></li>
 			<li><a href="#">Exercise 4-1</a></li>
 			<li><a href="#">Exercise 5-1</a></li>
@@ -24,13 +24,17 @@
 		</ul>
 		<h3>Enhancements</h3>
 		<ul>
-			<li><a href="#">Enhancement 2-1</a></li>
+			<li><a href="/chapters/two/one-enhancement">Enhancement 2-1</a></li>
 			<li><a href="#">Enhancement 4-1</a></li>
 			<li><a href="#">Enhancement 5-1</a></li>
 			<li><a href="#">Enhancement 7-2</a></li>
 			<li><a href="#">Enhancement 11-1</a></li>
 			<li><a href="#">Enhancement 13-1</a></li>
 			<li><a href="#">Enhancement 12-1</a></li>
+		</ul>
+		<h3>Quizes</h3>
+		<ul>
+			<li><a href="/quiz/quiz-1.php">Quiz 1</a></li>
 		</ul>
 	</div>
 </article>
