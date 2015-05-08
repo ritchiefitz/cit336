@@ -12,11 +12,11 @@
 
     define(SALES_TAX, .08);
 
-    $product_description = $$product_descriptionErr = null;
-    $list_price = $$list_priceErr = null;
-    $discount_percent = $$discount_percentErr = null;
-    $discount_amount = $$discount_amountErr = null;
-    $discount_price = $$discount_priceErr = null;
+    $product_description = $product_descriptionErr = null;
+    $list_price = $list_priceErr = null;
+    $discount_percent = $discount_percentErr = null;
+    $discount_amount = $discount_amountErr = null;
+    $discount_price = $discount_priceErr = null;
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
