@@ -82,10 +82,13 @@
         <span><?php printf("$%.2f", $discount_amount); ?></span><br>
 
         <label>Discount Price:</label>
-        <span><?php printf("$%.2f", $discount_price); ?></span><br>
+        <span><?php printf("$%.2f", $discount_price); ?></span><br><br>
 
         <label>Sales Tax Rate:</label>
         <span><?php printf("%s%%", SALES_TAX * 100); ?></span><br>
+
+        <label>Sales Tax Amount:</label>
+        <span><?php printf("$%.2f", $sales_amount); ?></span><br>
 
         <b>
             <label>Amount with Tax:</label>
