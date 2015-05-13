@@ -10,7 +10,7 @@
 			<li><a href="#">Exercise 1-2</a> I did it.</li>
 			<li><a href="#">Exercise 1-3</a> I did it.</li>
 			<li><a href="/chapters/two/one">Exercise 2-1</a></li>
-			<li><a href="#">Exercise 3-1</a></li>
+			<li><a href="#">Exercise 3-1</a> I did it.</li>
 			<li><a href="#">Exercise 4-1</a></li>
 			<li><a href="#">Exercise 5-1</a></li>
 			<li><a href="#">Exercise 6-1</a></li>
