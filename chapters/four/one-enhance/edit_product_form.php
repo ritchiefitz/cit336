@@ -21,6 +21,15 @@ $statement1->execute();
 $categories = $statement1->fetchAll();
 $statement1->closeCursor();
 
+$query = 'SELECT *
+          FROM categories
+          WHERE categoryID = :category_id';
+$statement1 = $db->prepare($query);
+$statement1->bindValue(':category_id', $category_id);
+$statement1->execute();
+$product_category = $statement1->fetchAll()[0];
+$statement1->closeCursor();
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,7 +51,15 @@ $statement1->closeCursor();
 
             <label>Category:</label>
             <select name="category_id">
+                <option value="<?php echo $product_category['categoryID']; ?>">
+                    <?php echo $product_category['categoryName']; ?>
+                </option>
             <?php foreach ($categories as $category) : ?>
+                <?php 
+                    if ($product_category['categoryID'] == $category['categoryID']) {
+                        continue;
+                    }
+                ?>
                 <option value="<?php echo $category['categoryID']; ?>">
                     <?php echo $category['categoryName']; ?>
                 </option>
