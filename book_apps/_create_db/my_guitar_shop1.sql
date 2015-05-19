@@ -1,15 +1,17 @@
 -- create and select the database
-DROP DATABASE IF EXISTS my_guitar_shop1;
-CREATE DATABASE my_guitar_shop1;
-USE my_guitar_shop1;  -- MySQL command
+-- DROP DATABASE IF EXISTS my_guitar_shop1;
+-- CREATE DATABASE my_guitar_shop1;
+-- USE my_guitar_shop1;  -- MySQL command
 
 -- create the tables
+DROP TABLE IF EXISTS categories;
 CREATE TABLE categories (
   categoryID       INT(11)        NOT NULL   AUTO_INCREMENT,
   categoryName     VARCHAR(255)   NOT NULL,
   PRIMARY KEY (categoryID)
 );
 
+DROP TABLE IF EXISTS products;
 CREATE TABLE products (
   productID        INT(11)        NOT NULL   AUTO_INCREMENT,
   categoryID       INT(11)        NOT NULL,
@@ -19,6 +21,7 @@ CREATE TABLE products (
   PRIMARY KEY (productID)
 );
 
+DROP TABLE IF EXISTS orders;
 CREATE TABLE orders (
   orderID        INT(11)        NOT NULL   AUTO_INCREMENT,
   customerID     INT            NOT NULL,
@@ -45,12 +48,12 @@ INSERT INTO products VALUES
 (10, 3, 'tama', 'Tama 5-Piece Drum Set with Cymbals', '799.99');
 
 -- create the users and grant priveleges to those users
-GRANT SELECT, INSERT, DELETE, UPDATE
-ON my_guitar_shop1.*
-TO mgs_user@localhost
-IDENTIFIED BY 'pa55word';
-
-GRANT SELECT
-ON products
-TO mgs_tester@localhost
-IDENTIFIED BY 'pa55word';
+-- GRANT SELECT, INSERT, DELETE, UPDATE
+-- ON my_guitar_shop1.*
+-- TO mgs_user@localhost
+-- IDENTIFIED BY 'pa55word';
+-- 
+-- GRANT SELECT
+-- ON products
+-- TO mgs_tester@localhost
+-- IDENTIFIED BY 'pa55word';

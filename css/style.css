@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lora:700);
 
 body {
-	background: url(../images/home-bg.jpg) no-repeat;
+	background: url(../images/home-bg.jpg) no-repeat fixed;
 	background-size: cover;
 	margin: 0;
 
@@ -83,4 +83,25 @@ a:hover {
 
 .week {
 	margin: 15px 0 15px 50px;
+}
+
+.slide {
+	background: #4F3777;
+	color: #FFFFFF;
+	padding: 25px 40px;
+	margin: 10px 0;
+	font-size: 1.5em;
+}
+
+.slide .title {
+	font-size: 2em;
+	display: inline-block;
+}
+
+.slide h3 {
+	font: 400 1.3em "Muli", sans-serif;
+}
+
+.slide li {
+	margin: 8px 0;
 }

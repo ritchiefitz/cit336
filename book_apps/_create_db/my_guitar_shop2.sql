@@ -1,9 +1,10 @@
 -- create and select the database
-DROP DATABASE IF EXISTS my_guitar_shop2;
-CREATE DATABASE my_guitar_shop2;
-USE my_guitar_shop2;
+-- DROP DATABASE IF EXISTS my_guitar_shop2;
+-- CREATE DATABASE my_guitar_shop2;
+-- USE my_guitar_shop2;
 
 -- create the tables for the database
+DROP TABLE IF EXISTS customers;
 CREATE TABLE customers (
   customerID        INT            NOT NULL   AUTO_INCREMENT,
   emailAddress      VARCHAR(255)   NOT NULL,
@@ -16,11 +17,12 @@ CREATE TABLE customers (
   UNIQUE INDEX emailAddress (emailAddress)
 );
 
+DROP TABLE IF EXISTS addresses;
 CREATE TABLE addresses (
   addressID         INT            NOT NULL   AUTO_INCREMENT,
   customerID        INT            NOT NULL,
   line1             VARCHAR(60)    NOT NULL,
-  line2             VARCHAR(60)               DEFAULT NULL,
+  line2             VARCHAR(60)    DEFAULT NULL,
   city              VARCHAR(40)    NOT NULL,
   state             VARCHAR(2)     NOT NULL,
   zipCode           VARCHAR(10)    NOT NULL,
@@ -30,6 +32,7 @@ CREATE TABLE addresses (
   INDEX customerID (customerID)
 );
 
+DROP TABLE IF EXISTS orders;
 CREATE TABLE orders (
   orderID           INT            NOT NULL   AUTO_INCREMENT,
   customerID        INT            NOT NULL,
@@ -46,6 +49,7 @@ CREATE TABLE orders (
   INDEX customerID (customerID)
 );
 
+DROP TABLE IF EXISTS orderItems;
 CREATE TABLE orderItems (
   itemID            INT            NOT NULL   AUTO_INCREMENT,
   orderID           INT            NOT NULL,
@@ -58,6 +62,7 @@ CREATE TABLE orderItems (
   INDEX productID (productID)
 );
 
+DROP TABLE IF EXISTS products;
 CREATE TABLE products (
   productID         INT            NOT NULL   AUTO_INCREMENT,
   categoryID        INT            NOT NULL,
@@ -72,12 +77,14 @@ CREATE TABLE products (
   UNIQUE INDEX productCode (productCode)
 );
 
+DROP TABLE IF EXISTS categories;
 CREATE TABLE categories (
   categoryID        INT            NOT NULL   AUTO_INCREMENT,
   categoryName      VARCHAR(255)   NOT NULL,
   PRIMARY KEY (categoryID)
 );
 
+DROP TABLE IF EXISTS administrators;
 CREATE TABLE administrators (
   adminID           INT            NOT NULL   AUTO_INCREMENT,
   emailAddress      VARCHAR(255)   NOT NULL,
@@ -135,7 +142,7 @@ INSERT INTO administrators (adminID, emailAddress, password, firstName, lastName
 (3, 'mike@murach.com', '3f2975c819cefc686282456aeae3a137bf896ee8', 'Mike', 'Murach');
 
 -- Create a user named mgs_user
-GRANT SELECT, INSERT, UPDATE, DELETE
-ON *
-TO mgs_user@localhost
-IDENTIFIED BY 'pa55word';
+-- GRANT SELECT, INSERT, UPDATE, DELETE
+-- ON *
+-- TO mgs_user@localhost
+-- IDENTIFIED BY 'pa55word';
