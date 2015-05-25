@@ -26,7 +26,7 @@
 		<ul>
 			<li><a href="/chapters/two/one-enhancement">Enhancement 2-1</a></li>
 			<li><a href="/chapters/four/one-enhance">Enhancement 4-1</a></li>
-			<li><a href="#">Enhancement 5-1</a></li>
+			<li><a href="/chapters/five/one-enhance">Enhancement 5-1</a></li>
 			<li><a href="#">Enhancement 7-2</a></li>
 			<li><a href="#">Enhancement 11-1</a></li>
 			<li><a href="#">Enhancement 13-1</a></li>
