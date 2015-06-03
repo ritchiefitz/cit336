@@ -10,7 +10,7 @@ $query = 'SELECT *
 $statement = $db->prepare($query);
 $statement->bindValue(':product_id', $product_id);
 $statement->execute();
-$product = $statement->fetchAll()[0];
+$product = $statement->fetch();
 $statement->closeCursor();
 
 $query = 'SELECT *
@@ -27,7 +27,7 @@ $query = 'SELECT *
 $statement1 = $db->prepare($query);
 $statement1->bindValue(':category_id', $category_id);
 $statement1->execute();
-$product_category = $statement1->fetchAll()[0];
+$product_category = $statement1->fetch();
 $statement1->closeCursor();
 
 ?>
