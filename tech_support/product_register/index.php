@@ -65,7 +65,7 @@ if ($action == 'customer_login') {
 		$response = add_registration($customer_id, $product_code);
 
 		if ($response == FALSE) {
-			$message = 'Product already registered to user.';
+			$message = 'Product ($product_code) is already registered to user.';
 			include('product_register.php');
 		} else {
 			$message = "Product ($product_code) was registered successfully.";
