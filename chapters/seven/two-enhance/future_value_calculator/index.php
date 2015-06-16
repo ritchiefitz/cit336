@@ -20,11 +20,12 @@ switch ($action) {
 
     	$error_message = validate_fields($investment, $interest_rate, $years);
 
-    	// If there is an empty error we had no errors.
+    	// If $error_message is empty we had no errors.
     	if ($error_message == '') {
 		    
 		    $future_value = NULL;
 
+		    // Check whether compound interest was set.
 		    if (isset($compound_interest)) {
 		    	$compound_interest = 'Yes';
 
