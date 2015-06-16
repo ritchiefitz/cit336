@@ -17,7 +17,7 @@
 			<li><a href="#">Exercise 6-2</a> I did it.</li>
 			<li><a href="/chapters/seven/two">Exercise 7-2</a></li>
 			<li><a href="/chapters/eight/two">Exercise 8-2</a></li>
-			<li><a href="#">Exercise 11-1</a></li>
+			<li><a href="/chapters/eleven/one">Exercise 11-1</a></li>
 			<li><a href="#">Exercise 13-1</a></li>
 			<li><a href="#">Exercise 12-1</a></li>
 			<li><a href="#">Exercise 15-1</a></li>
@@ -28,7 +28,7 @@
 			<li><a href="/chapters/four/one-enhance">Enhancement 4-1</a></li>
 			<li><a href="/chapters/five/one-enhance">Enhancement 5-1</a></li>
 			<li><a href="/chapters/seven/two-enhance">Enhancement 7-2</a></li>
-			<li><a href="#">Enhancement 11-1</a></li>
+			<li><a href="/chapters/eleven/one-enhance">Enhancement 11-1</a></li>
 			<li><a href="#">Enhancement 13-1</a></li>
 			<li><a href="#">Enhancement 12-1</a></li>
 		</ul>
