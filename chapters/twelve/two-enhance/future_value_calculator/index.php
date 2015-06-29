@@ -1,9 +1,11 @@
 <?php
 
 // expire two weeks from now.
-$expiration = 60 * 60 * 24 * 14;
-session_set_cookie_params($expiration, '/');
-session_start();
+if (!isset($_SESSION)) {
+    $expiration = 60 * 60 * 24 * 14;
+    session_set_cookie_params($expiration, '/');
+    session_start();
+}
 
 $error_message = NULL;
 

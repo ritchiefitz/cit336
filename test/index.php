@@ -1,3 +1,8 @@
+<?php 
+    if (!$_SESSION) {
+        session_start();
+    }
+?>
 <?php
 require '../library/library.php';
 
