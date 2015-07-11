@@ -20,7 +20,7 @@ if (!isset($_SESSION)) {
       <p>Sports management software for the sports enthusiast</p>
 
       <?php if (!isset($_SESSION['logged_in'])): ?>
-        <a class="log-link" href="/tech_support2/product_register?action=login">Login</a>
+        <a class="log-link" href="/tech_support2/product_register?action=display_login">Login</a>
       <?php else: ?>
         <a class="log-link" href="/tech_support2/product_register?action=logout">Logout</a>
       <?php endif; ?>
