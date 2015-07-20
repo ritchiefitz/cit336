@@ -4,6 +4,11 @@
 	<h1 class="page-title">Exercises</h1>
 	<h2>Unit 2</h2>
 	<div class="week">
+		<h3>Final Project</h3>
+		<p>Project Link: <a href="http://iris.ritchiefitzgerald.com/">Iris</a></p>
+		<p>Project Video</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/RXNu-0eIWFA" frameborder="0" allowfullscreen></iframe>
+
 		<h3>Exercises</h3>
 		<ul>
 			<li><a href="#">Exercise 1-1</a> I did it.</li>
